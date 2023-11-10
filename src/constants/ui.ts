@@ -1,0 +1,2 @@
+export const DEFAULT_RADII_TOKEN = "$4"
+export const HORIZONTAL_CONTENT_PADDING_TOKEN = "$7"

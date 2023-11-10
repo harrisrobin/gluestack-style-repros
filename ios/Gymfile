@@ -1,0 +1,21 @@
+suppress_xcode_output(true)
+clean(false)
+
+scheme("palsandbox")
+
+configuration("Release")
+
+
+export_options({
+  method: "ad-hoc",
+  provisioningProfiles: {
+    "com.anomalylabs.palsandbox" => "cf702e99-edd6-41fa-8b8e-b1410c0aa7dc",
+  }
+})
+
+export_xcargs "OTHER_CODE_SIGN_FLAGS=\"--keychain /var/folders/w2/tkgg86jx71ncljhqh_yxmrdm0000gn/T/turtle-v2-aa6682b8-a060-4adb-a86f-83d3355079e5.keychain\""
+
+disable_xcpretty(true)
+buildlog_path("/Users/harris/workspace/palestine/palsandboxtemp/local-builds-dump/logs")
+
+output_directory("./build")
